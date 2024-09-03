@@ -1,0 +1,199 @@
+.menu {
+  width: 19rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 60%;
+  transform: translateY(-60%);
+  left: 10vw;
+}
+
+.item {
+  height: 3.7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.item.active .title {
+  font-size: 1.5rem;
+}
+
+.sub-container {
+  width: 18.5rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  right: 10vw;
+  cursor: pointer;
+}
+
+.active-subheading {
+  cursor: default;
+}
+
+.item.active:nth-child(1) {
+  background: linear-gradient(90deg, var(--transparent), var(--purple) 70%);
+  border-radius: var(--radius-right);
+}
+.item.active:nth-child(2) {
+  background: linear-gradient(90deg, var(--transparent), var(--blue) 70%);
+  border-radius: var(--radius-right);
+}
+.item.active:nth-child(3) {
+  background: linear-gradient(90deg, var(--transparent), var(--cyan) 70%);
+  border-radius: var(--radius-right);
+}
+
+.sub-container-1.active-subheading h3,
+.sub-container-2.active-subheading h3,
+.sub-container-3.active-subheading h3 {
+  border-radius: var(--radius-left);
+}
+
+.sub-container-1.active-subheading h3 {
+  background: linear-gradient(90deg, var(--purple), var(--transparent) 100%);
+}
+.sub-container-2.active-subheading h3 {
+  background: linear-gradient(90deg, var(--blue), var(--transparent) 100%);
+}
+.sub-container-3.active-subheading h3 {
+  background: linear-gradient(90deg, var(--cyan), var(--transparent) 100%);
+}
+
+.item.active {
+  position: relative;
+  cursor: default;
+}
+
+.p-container {
+  display: none;
+}
+
+.active-subheading .p-container {
+  display: block;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;  /* Adds a slight black border/shadow around the text */
+}
+
+
+.icon-title-container {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+  cursor: default;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.sub-container-1 h3,
+.sub-container-2 h3,
+.sub-container-3 h3 {
+  position: relative;
+  margin: 0.2rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+@media (max-width: 700px) {
+  .sub-container {
+    right: 1rem;
+  }
+  .item.active .title {
+    font-size: 1rem;
+  }
+  .item {
+    height: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .sub-container {
+    width: 15rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title {
+    font-size: 0.8rem;
+    padding-right: 2.5rem;
+  }
+  .active-subheading .p-container {
+    font-size: 0.8rem;
+  }
+  .icon-title-container,
+  .icon {
+    display: none;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+  h2,
+  h3,
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Modal overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);  /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Ensure it’s above all other content */
+}
+
+/* Modal content (image) styling */
+.modal-content {
+  position: relative;
+  width: 25%;  /* Make the modal 1/4th of the screen width */
+  max-width: 25vw;  /* Ensure it doesn't exceed 1/4th of the viewport width */
+  height: auto;
+  max-height: 25vh;  /* Ensure it doesn't exceed 1/4th of the viewport height */
+  margin-top: -300px; /* Move the image further up on the screen */
+}
+
+.large-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* More visible shadow */
+  border: 2px solid #800080;  /* Adds a 2px solid purple border */
+}
+
+.photo-gallery {
+  display: flex;  /* Enables Flexbox for this container */
+  gap: 10px;  /* Adds space between the images */
+  justify-content: center;  /* Center the images horizontally */
+  flex-wrap: wrap;  /* Allows the images to wrap to the next line if the screen is too narrow */
+}
+
+.small-photo {
+  width: 100px;  /* Fixed width */
+  height: 100px;  /* Fixed height to ensure all images are square and uniform */
+  object-fit: cover;  /* Cover the container while maintaining the aspect ratio */
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  transition: transform 0.2s ease-in-out;  /* Smooth transition for hover effect */
+  border: 2px solid white;  /* White border around the image */
+  margin: 10px;  /* Add gap between images (this can be adjusted or removed if gap is managed by Flexbox) */
+  border-radius: 4px;  /* Optional: Slightly round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: Add a subtle shadow */
+}
+
+
+
