@@ -1,0 +1,36 @@
+.window {
+  width: 60vw;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 15px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  color: #fffbfb;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red { background-color: #ff605c; }
+.yellow { background-color: #ffbd44; }
+.green { background-color: #00ca4e; }
+
+.text-container {
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
