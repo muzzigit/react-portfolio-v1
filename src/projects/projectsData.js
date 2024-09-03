@@ -17,17 +17,16 @@ const projects = {
     demo: "https://netlify.com",
   },
   2: {
-    title: "Productivity App",
+    title: "LinkTree Website",
     image: projectTwo,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Explore my world through a custom-built Linktree page! Designed from scratch using HTML and CSS, it showcases my latest projects, GitHub contributions, and professional profile, all in one sleek, responsive interface. Dive in and connect with me!
         </p>
       </>
     ),
-    github: "https://github.com",
+    github: "https://github.com/muzzigit/linktreefromscratch",
     demo: "https://netlify.com",
   },
   3: {
