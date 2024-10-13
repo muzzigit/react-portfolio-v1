@@ -118,4 +118,5 @@ label {
   position: absolute;
   bottom: 1rem;         /* Adjust to move the icons up/down */
   left: 50%;            /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
  
