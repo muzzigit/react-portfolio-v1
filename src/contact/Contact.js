@@ -8,21 +8,21 @@ const Contact = () => {
     <div className="contact-container">
       <ContactMenu /> {/* Existing form content */}
 
-      {/* Social Icons Section at the Bottom Center */}
-      <div className="social-icons-bottom-center">
-        <a href="https://github.com/kunal1018" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kunal-gandhi-9349852a0" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/yourInstagramHandle" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:kunalgandhi182005@gmail.com">
-          <i className="fas fa-envelope"></i>
-        </a>
-      </div>
+      {/* Social Icons Section at the Bottom Left */}
+      <div className="social-icons-bottom-left">
+          <a href="https://github.com/muzzigit" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/muzzi-khan" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/3mzz.i" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:kmuzzi16@gmail.com">
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div>
     </div>
   );
 };
