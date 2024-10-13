@@ -112,3 +112,8 @@ label {
   background: #0f0f0f; /* Dark background */
   color: white;
 }
+
+/* Social Icons Positioned at the Bottom Center */
+.social-icons-bottom-center {
+  position: absolute;
+ 
