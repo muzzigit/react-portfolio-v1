@@ -116,4 +116,6 @@ label {
 /* Social Icons Positioned at the Bottom Center */
 .social-icons-bottom-center {
   position: absolute;
- 
+  bottom: 1rem;         /* Adjust to move the icons up/down */
+  
+}
