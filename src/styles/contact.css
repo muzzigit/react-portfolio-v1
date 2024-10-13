@@ -107,3 +107,8 @@ label {
 /* Container for the Contact Page */
 .contact-container {
   position: relative;
+  min-height: 100vh; /* Ensure full-page height */
+  padding: 2rem;
+  background: #0f0f0f; /* Dark background */
+  color: white;
+}
