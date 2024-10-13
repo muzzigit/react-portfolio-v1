@@ -196,4 +196,48 @@
 }
 
 
+/* Container for the social icons at the bottom-left */
+.social-icons-bottom-left {
+  position: absolute;  /* Positioned absolutely inside the parent container */
+  bottom: 1rem;        /* Adjust this value to move the icons up/down */
+  left: 1rem;          /* Adjust this value to move the icons left/right */
+  display: flex;       /* Use flexbox for layout */
+  gap: 0.8rem;           /* Space between the icons */
+}
 
+/* Styling for the individual icons */
+.social-icons-bottom-left a {
+  color: #ff5aff8b;       /* Default color (light blue) */
+  font-size: 2rem;    /* Icon size */
+  text-decoration: none; /* Remove underline by default */
+  transition: transform 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+/* Hover effect: underline appears, icon zooms slightly */
+.social-icons-bottom-left a:hover {
+  transform: scale(1.5);  /* Slight zoom effect */
+  text-decoration: underline;  /* Underline only on hover */
+}
+
+/* Specific color for Instagram */
+.social-icons-bottom-left .fa-instagram {
+  color: #ff5aff8b; /* Instagram's signature pink color */
+}
+
+/* Specific color for the email icon */
+.social-icons-bottom-left .fa-envelope {
+  color: #ff5aff8b; /* White for email */
+}
+
+/* Optional: Media queries to adjust layout on smaller screens */
+@media (max-width: 700px) {
+  .social-icons-bottom-left {
+    bottom: 2rem;  /* Move the icons up slightly on smaller screens */
+    left: 2rem;    /* Adjust spacing from the left side */
+    gap: 0.8rem;   /* Reduce the gap between icons */
+  }
+
+  .social-icons-bottom-left a {
+    font-size: 1.2rem; /* Slightly smaller icons on smaller screens */
+  }
+}

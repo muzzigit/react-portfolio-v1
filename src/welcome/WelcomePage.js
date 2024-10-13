@@ -3,7 +3,7 @@ import '../styles/WelcomePage.css';
 
 const WelcomePage = ({ onFinish }) => {
   const [text, setText] = useState('');
-  const fullText = `> npm start\n> portfolio@0.1.0 start /muzzikhan\n> react-scripts start\n\nStarting the development server...`;
+  const fullText = `  npm start\n> portfolio@0.1.0 start /muzzikhan\n> react-scripts start\n\nStarting the development server...`;
 
   useEffect(() => {
     let index = 0;
