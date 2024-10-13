@@ -122,3 +122,6 @@ label {
   display: flex;        /* Flexbox layout for icons */
   gap: 1.5rem;          /* Space between icons */
 }
+
+/* Individual Icon Styling */
+
