@@ -128,4 +128,5 @@ label {
   color: #3b82f6;        /* Default color for GitHub/LinkedIn */
   font-size: 2rem;       /* Icon size */
   text-decoration: none; /* Remove underline by default */
- 
+  transition: transform 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
