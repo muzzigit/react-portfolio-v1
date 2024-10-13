@@ -120,4 +120,5 @@ label {
   left: 50%;            /* Center horizontally */
   transform: translateX(-50%); /* Adjust for perfect centering */
   display: flex;        /* Flexbox layout for icons */
- 
+  gap: 1.5rem;          /* Space between icons */
+}
