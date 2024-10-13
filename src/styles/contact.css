@@ -104,3 +104,6 @@ label {
     padding: 0 0.5rem;
   }
 }
+/* Container for the Contact Page */
+.contact-container {
+  position: relative;
