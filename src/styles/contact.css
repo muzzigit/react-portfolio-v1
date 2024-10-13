@@ -127,4 +127,5 @@ label {
 .social-icons-bottom-center a {
   color: #3b82f6;        /* Default color for GitHub/LinkedIn */
   font-size: 2rem;       /* Icon size */
-  
+  text-decoration: none; /* Remove underline by default */
+ 
