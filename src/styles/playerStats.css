@@ -12,28 +12,43 @@
 h1 {
   margin: 0;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between; /* Aligns text and number on opposite ends */
+  align-items: center; /* Aligns them vertically */
+  width: 100%; /* Takes up the full width */
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.levelNumber {
+  font-weight: bold; /* Makes the number bold */
+  color: #c8ae1d; /* Bright yellow color for emphasis */
+  font-size: 1.8rem; /* Slightly larger font size */
+  margin-left: 1rem; /* Adds some space between the text and the number */
 }
 
 h2 {
   margin: 0;
   font-size: 1rem;
+  text-align: center;
 }
+
 
 #playerStats__lines {
   display: flex;
   align-items: center;
+  justify-content: center; /* Centers the lines horizontally */
 }
 
-#playerStats__lines__thick {
+#playerStats__lines__thick { 
   display: block;
-  background-color: white;
+  background-color: #c8ae1d; 
   height: 0.2rem;
-  width: 8.75rem;
+  width: 20rem; /* Extended width */
 }
 
 #playerStats__lines__thin {
   display: block;
-  background-color: lightgray;
+  background-color: rgba(255, 255, 255, 0.717);
   height: 0.1rem;
   width: 6.2rem;
 }
@@ -46,12 +61,22 @@ h2 {
     height: 2.5rem;
     top: 2rem;
   }
+
   h1 {
     font-size: 0.8rem;
   }
+
   h2,
   h3,
   p {
     font-size: 0.7rem;
+  }
+
+  #playerStats__lines__thick {
+    width: 15rem; /* Adjust for smaller screens */
+  }
+
+  #playerStats__lines__thin {
+    width: 5rem;
   }
 }

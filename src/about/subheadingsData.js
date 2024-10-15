@@ -32,20 +32,27 @@ content: (
   <>
     <p style={{ lineHeight: "1.6" }}>
       • BSc in Computer Science <br />
-      &nbsp;&nbsp;&nbsp;(Sept 2023 - Present) <br />
+      &nbsp;&nbsp;&nbsp;(Sept 2023 - Aug 2027) <br />
       • Expected Graduation Date: August 2027 <br/>
-      • Languages Learned: Python, DSA, Java & C
     </p>
   </>
 ),
     },
     {
-      title: "St. Benedict C.S.S",
+      title: "Relevant Coursework",
       content: (
         <>
           <p style={{ lineHeight: "1.6" }}>
-          • Gradation Date: September 2022 <br/>
-          • Award of Excellence sponsored by Linimar Corporation.
+          • Programming Languages:
+          Python, C, Java , VBA, ARMv7<br/>
+          • Software Engineering <br/>
+          • Data Structures and Algorithm Design<br/>
+          • SQL / Database Management Systems<br/>
+          • Microprocessors / Digital Electronics<br/>
+          • Opject-Oriented Programming (OOP)<br/>
+          • Discrete Mathematics<br/>
+          • Operating Systems<br/>
+          • Project Management<br/>
           </p>
         </>
       ),
@@ -53,48 +60,50 @@ content: (
   ],
   3: [
     {
-      title: "Hack The 6ix - Volunteer",
-content: (
-  <>
-    <p>
-      <span style={{ color: "purple" }}>
-        August 2024 - August 2024 <br/>
-        Toronto, Ontario, Canada <br/>
-      </span> {/* Close the <span> tag here */}
-      Actively contributed to the successful execution of Toronto’s premier hackathon by supporting event logistics and participant coordination. Responsibilities included managing registration, providing technical support, and offering on-site assistance for over 100 participants. Collaborated closely with teams to ensure seamless operations and deliver an engaging experience for all attendees.
-    </p>
-  </>
-)
-
-    },
-    {
-      title: "Best Buy - Sales Associate",
+      title: "SwiftlyWeb - Web Developer",
       content: (
         <>
           <p>
-          <span style={{ color: "purple" }}>
-        August 2022 - Present <br/>
-        Cambridge, Ontario, Canada <br/>
+          <span style={{ color: "darkgrey" }}>
+        June 2024 - Present <br/>
+        Self-employed <br/>
       </span> {/* Close the <span> tag here */}
-• Awarded Employee of the Month for consistently showing exceptional performance and outstanding customer service. <br/>
-• Provided exceptional customer service by assisting customers with purchasing decisions, locating items, and resolving issues promptly.<br/>
-• Maintained the sales floor and ensured merchandise organization, contributing to a positive shopping experience.<br/>
-• Processed cash and credit transactions efficiently, demonstrating accuracy and professionalism in a busy retail setting.<br/>
-• Developed positive customer relationships through friendly greetings and product knowledge, contributing to customer satisfaction and repeat business.
+      • Developed custom websites for small businesses to boost online visiblility using front-end and back-end technologies <br/>
+      • Conducted client outreach and needs analysis via social media, presenting tailored UI/UX prototypes. <br/>
+      • Managed the full development lifecycle, from requirements gathering to deployment.<br/>
+      • Implemented HTML, CSS, JavaScript, and back-end frameworks to build dynamic, data-driven applications.<br/>
           </p>
         </>
       ),
     },
     {
+      title: "Hack The 6ix - Workshop Supervisor",
+content: (
+  <>
+    <p>
+      <span style={{ color: "darkgrey" }}>
+        August 2024 - August 2024 <br/>
+        Toronto, Ontario, Canada <br/>
+      </span> {/* Close the <span> tag here */}
+      • Led coding workshops on HTML, CSS, JavaScript, and server side programming <br/>
+      • Worked with instructors to refine curriculum materials for better participant outcomes.<br/>
+      • Facilitated group discussions and collaborative coding to foster teamwork and problem-solving.<br/>
+      • Mentored attendees on project, troubleshooting, and software development best practices.<br/>
+    </p>
+  </>
+)
+
+    },
+    
+    {
       title: " Certifications",
       content: (
         <>
           <p style={{ lineHeight: "1.6" }}>
-         
+          • Front End Development Libraries (Issued: October 2024) <br/>
           • JavaScript Algorithms and Data Structures (Issued: August 2024)<br/>
           • Responsive Web Design (Issued: August 2024)<br/>
-          • SHSM (Special High Skills Major) Certification (Issued: June 2022)<br/>
-          • First Aid Certification (Issued: November 2021)
+          
 
 
           </p>

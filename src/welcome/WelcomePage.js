@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/WelcomePage.css';
+import Background from '../background/Background'; // Import Background component
 
 const WelcomePage = ({ onFinish }) => {
   const [text, setText] = useState('');
@@ -7,11 +8,11 @@ const WelcomePage = ({ onFinish }) => {
 
   useEffect(() => {
     let index = 0;
-    const typingSpeed = 50;
+    const typingSpeed = 30;
 
     const typeEffect = () => {
       if (index < fullText.length) {
-        setText((prevText) => `${prevText}${fullText.charAt(index)}`); // Concatenates each character properly
+        setText((prevText) => `${prevText}${fullText.charAt(index)}`);
         index++;
         setTimeout(typeEffect, typingSpeed);
       } else {
@@ -25,13 +26,16 @@ const WelcomePage = ({ onFinish }) => {
   }, [fullText, onFinish]);
 
   return (
-    <div className="window">
-      <div className="dots">
-        <span className="dot red"></span>
-        <span className="dot yellow"></span>
-        <span className="dot green"></span>
+    <div className="welcome-container">
+      <Background /> {/* Add Background component here */}
+      <div className="window">
+        <div className="dots">
+          <span className="dot red"></span>
+          <span className="dot yellow"></span>
+          <span className="dot green"></span>
+        </div>
+        <div className="text-container">{text}</div>
       </div>
-      <div className="text-container">{text}</div>
     </div>
   );
 };

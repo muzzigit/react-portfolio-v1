@@ -4,7 +4,7 @@ import projectThree from "../assets/project-3.png";
 
 const projects = {
   1: {
-    title: "Personal Portfolio Website",
+    title: "Portfolio Website",
     image: projectOne,
     description: (
       <>
@@ -16,21 +16,21 @@ const projects = {
     github: "https://github.com/muzzigit/react-portfolio-v1",
     demo: "https://netlify.com",
   },
-  2: {
-    title: "LinkTree Website",
+  3: {
+    title: "MyTree Website",
     image: projectTwo,
     description: (
       <>
         <p>
-        Explore my world through a custom-built Linktree page! Designed from scratch using HTML and CSS, it showcases my latest projects, GitHub contributions, and professional profile, all in one sleek, responsive interface. Dive in and connect with me!
+        Explore my world through a custom-built alternative "Linktree" page! Designed from scratch using HTML and CSS, it showcases my latest projects, GitHub contributions, and professional profile, all in one sleek, responsive interface. Dive in and connect with me!
         </p>
       </>
     ),
     github: "https://github.com/muzzigit/linktreefromscratch",
     demo: "https://netlify.com",
   },
-  3: {
-    title: "Food Delivery App",
+  2: {
+    title: "IOS Stock Widget",
     image: projectThree,
     description: (
       <>
