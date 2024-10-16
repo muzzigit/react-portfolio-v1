@@ -17,7 +17,7 @@ const projects = {
     demo: "https://netlify.com",
   },
   3: {
-    title: "MyTree Website",
+    title: "MyTree App",
     image: projectTwo,
     description: (
       <>
@@ -26,23 +26,22 @@ const projects = {
         </p>
       </>
     ),
-    github: "https://github.com/muzzigit/linktreefromscratch",
+    github: "https://github.com/muzzigit/MyTree",
     demo: "https://netlify.com",
   },
   2: {
-    title: "IOS Stock Widget",
+    title: "Bitcoin Price Bot",
     image: projectThree,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Developed a Discord bot using Node.js that fetches real-time Bitcoin prices via the CoinDesk API and displays them in both USD and CAD. The bot responds to user commands with detailed price information, updates its status automatically, and offers interactive embeds for a seamless experience.
         </p>
       </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
-  },
+    github: "https://github.com/muzzigit/bitcoin-price-bot",
+    demo: "https://discord.gg/DUC2WqQ9",               
+  },           
 };
 
 export default projects;

@@ -119,7 +119,7 @@
 @media (max-width: 700px) {
   .sub-container {
     width: 15rem;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -233,11 +233,20 @@
 @media (max-width: 700px) {
   .social-icons-bottom-left {
     bottom: 2rem;  /* Move the icons up slightly on smaller screens */
-    left: 2rem;    /* Adjust spacing from the left side */
+    left: 50%;  
+    transform: translateX(19%);  /* Adjust spacing from the left side */
     gap: 0.8rem;   /* Reduce the gap between icons */
   }
 
   .social-icons-bottom-left a {
     font-size: 1.2rem; /* Slightly smaller icons on smaller screens */
+  }
+}
+@media (max-width: 700px) {
+  .menu {
+    width: 15rem;               /* Decrease the width of the menu */
+    top: 50%;                   /* Adjust the vertical position */
+    left: 5vw;                  /* Move the menu closer to the left edge */
+    transform: translateY(-50%); /* Adjust the vertical centering */
   }
 }

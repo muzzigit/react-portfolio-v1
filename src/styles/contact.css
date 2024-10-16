@@ -108,7 +108,7 @@ label {
 .social-icons-bottom-left {
   position: absolute;  /* Positioned absolutely inside the parent container */
   bottom: 1rem;        /* Adjust this value to move the icons up/down */
-  left: 37.5rem;          /* Adjust this value to move the icons left/right */
+  left: 53rem;          /* Adjust this value to move the icons left/right */
   display: flex;       /* Use flexbox for layout */
   gap: 0.8rem;           /* Space between the icons */
 }

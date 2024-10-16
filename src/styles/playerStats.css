@@ -80,3 +80,16 @@ h2 {
     width: 5rem;
   }
 }
+@media (max-width: 700px) {
+  #playerStats {
+    left: 25%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 2.5rem;
+    top: 2rem;
+  }
+
+  #playerStats * { 
+    font-size: 0.55rem !important; /* Apply to all child elements inside #playerStats */
+  }
+}

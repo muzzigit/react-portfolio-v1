@@ -68,3 +68,36 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 700px) {
+  .nav-about,
+  .nav-skills,
+  .nav-projects,
+  .nav-contact {
+    transform: translateX(2px) translateY(-610px) ;
+  }
+  
+  .nav-link {
+    width: 1.4rem;              /* Ensure the width is consistent with the icon */
+    display: flex;            /* Enable Flexbox */
+    flex-direction: column;   /* Stack icon and title vertically */
+    align-items: center;      /* Horizontally center icon and title */
+    justify-content: center;  /* Vertically center content */
+    text-align: center;       /* Ensure text is centered */
+    gap: 0.2rem;              /* Use gap for space between icon and title */
+}
+
+.nav-link img {
+    width: 2rem;              /* Icon size */
+    margin-bottom: 0;         /* Reset margin-bottom */
+}
+
+.page-title {
+    display: block;           /* Show title */
+    font-size: 0.5rem;        /* Adjust font size */
+    color: white;             /* Set text color */
+    line-height: 1rem;      /* Adjust line height for better spacing */
+    text-align: center;       /* Center the title text */
+    transform: translateX(-0.3rem); 
+}
+}
