@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { Component } from "react";
 import classNames from "classnames";
 import "../styles/aboutMenu.css";
