@@ -32,11 +32,14 @@ export default function ContactMenu() {
 
     setIsLoading(true);
 
+    // Destructure form data
     const { name, email, message } = formData;
+
+    // Send email using the sanitized and correctly structured data
     const sanitizedData = {
-      name: "Name: " + DOMPurify.sanitize(name),
-      email: "Email: " + DOMPurify.sanitize(email),
-      message: "Message: " + DOMPurify.sanitize(message),
+      name: DOMPurify.sanitize(name),
+      email: DOMPurify.sanitize(email),
+      message: DOMPurify.sanitize(message),
     };
 
     const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -46,7 +49,7 @@ export default function ContactMenu() {
     emailjs
       .send(serviceID, templateID, sanitizedData, userID)
       .then((response) => {
-        console.log("Email is sent successfully!", response.text);
+        console.log("Email sent successfully!", response.text);
         setFormData(initialState);
         setErrors({});
         setIsSent(true);
@@ -95,7 +98,7 @@ export default function ContactMenu() {
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
               className={errors.name ? "error" : ""}
@@ -111,7 +114,7 @@ export default function ContactMenu() {
               type="email"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
               className={errors.email ? "error" : ""}
@@ -126,7 +129,7 @@ export default function ContactMenu() {
             <textarea
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder="Enter your message"
               value={formData.message}
               onChange={handleChange}
               className={errors.message ? "error" : ""}

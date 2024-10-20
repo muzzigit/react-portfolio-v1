@@ -1,59 +1,60 @@
+/* Terminal Container Styles */
 .terminal {
   background-color: #202020;
   color: #FFFFFF;
   padding: 5px;
   border-radius: 0px;
   font-family: 'Courier New', Courier, monospace;
-  white-space: pre;
+  white-space: pre-wrap; /* Allows wrapping and preserves whitespace */
   font-size: 16px;
   line-height: 1.5;
   max-width: 600px;
   margin: 50px auto;
   position: relative;
+  transform: translateY(15rem);
 }
 
+/* Cursor Blinking Effect */
 .blink-cursor {
-  animation: blink 1s infinite;
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  color: #ffffff; 
 }
 
-.empty {
-  height: 3rem; 
-}
-
+/* Keyframes for Blinking Cursor */
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+/* Command Colors */
 .command {
   color: #00FF00; /* Green color for commands */
 }
 
-.output {
-  color: #FFFFFF; /* White color for output */
-}
-
+/* Terminal Header */
 .terminal-header {
   display: flex;
   align-items: center;
-  padding: 4px 16px;   /* Increased horizontal padding for better spacing */
+  padding: 4px 16px;
   background: #333;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  margin-bottom: 10px;  /* Added a small margin to separate header from content */
+  margin-bottom: 10px;
 }
 
+/* Terminal Header Buttons */
 .terminal-button {
   display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 8px;   /* Increased margin for better spacing */
+  margin-right: 8px;
 }
 
 .terminal-button.red {
-  background: #E74C3C;  /* Adjusted colors to match the visual */
+  background: #E74C3C;
 }
 
 .terminal-button.yellow {
@@ -64,13 +65,31 @@
   background: #2ECC71;
 }
 
-.info {
-  color: #FFFF00;  /* Yellow color for info lines like portfolio@0.1.0 */
+/* Colors for Specific Lines */
+.npm-start {
+  color: #00FF00; /* Green color for npm start */
 }
+
+.portfolio-info {
+  color: #FFFF00; /* Yellow color for portfolio info */
+}
+
+.output {
+  color: #FFFFFF; /* White for other output lines */
+  margin-bottom: 8px; /* Default margin between output lines */
+}
+
+/* Styling for the Empty Line */
+.empty-line {
+  height: 20px; /* This height ensures spacing between lines */
+}
+
+/* Media Query for Small Screens */
 @media (max-width: 700px) {
   .terminal {
-    margin: 30vh auto; /* Center vertically and horizontally */
-    transform: translateY(-1%); /* Adjust vertical centering */
-    max-width: auto; /* Optional: Adjust width to fit smaller screens */
+    margin: 30vh auto;
+    transform: translateY(-1%);
+    max-width: auto;
   }
 }
+

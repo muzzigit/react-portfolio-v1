@@ -351,3 +351,19 @@
   }
   
 }
+@media only screen and (min-width: 701px) and (max-width: 1440px) {
+  .social-icons-bottom-left {
+    transform: translateX(-15rem);
+  }  
+  .small-photo {
+    width: 160px;  /* Fixed width */
+    height: 80px;  /* Fixed height to ensure all images are square and uniform */
+    object-fit: cover;  /* Cover the container while maintaining the aspect ratio */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease-in-out;  /* Smooth transition for hover effect */
+    border: 2px solid white;  /* White border around the image */
+    margin: 8px;  /* Add gap between images (this can be adjusted or removed if gap is managed by Flexbox) */
+    border-radius: 4px;  /* Optional: Slightly round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: Add a subtle shadow */
+  }
+}
