@@ -44,9 +44,10 @@ const PhotographyGallery = () => {
       {isOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="prev-button" onClick={prevImage}>❮</button>
+          <button className="close-button" onClick={closeModal}>X</button>
+          <button className="next-button" onClick={nextImage}>❯</button>
             <img src={photos[currentIndex]} alt={`Car ${currentIndex + 1}`} className="large-photo" />
-            <button className="next-button" onClick={nextImage}>❯</button>
+            <button className="prev-button" onClick={prevImage}>❮</button>
           </div>
         </div>
       )}

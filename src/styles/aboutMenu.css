@@ -106,29 +106,37 @@
 }
 
 @media (max-width: 700px) {
-  .sub-container {
-    right: 1rem;
+.sub-container {
+    right: 0.5rem !important;
+    
   }
   .item.active .title {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    
   }
   .item {
-    height: 2rem;
+    height: 0.5rem;
+      /* Adjust the top margin or position */
+    margin-top: auto !important;
+    transform: translateY(-5rem) translateX(-0.5rem) !important;
+      /* Or if using absolute positioning */
   }
+
+  
 }
 @media (max-width: 700px) {
   .sub-container {
-    width: 15rem;
-    top: 40%;
+    width: 20rem;
+    top: 25%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(5%);
   }
   .title {
-    font-size: 0.8rem;
-    padding-right: 2.5rem;
+    font-size: 0.7rem !important;
+    padding-right: 0rem;
   }
   .active-subheading .p-container {
-    font-size: 0.8rem;
+    font-size: 0.2rem;
   }
   .icon-title-container,
   .icon {
@@ -142,6 +150,30 @@
   p {
     font-size: 0.8rem;
   }
+  @media (max-width: 700px) {
+    .menu {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: flex-start !important;  /* Align items to the left */
+      width: 100vw !important;  /* Ensure the menu spans the full width of the viewport */
+      left: 0 !important;  /* Position the menu starting from the left */
+      transform: translateX(0) !important;  /* Remove any previous translation */
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  
+    .item {
+      flex: 1 1 auto !important;  /* Each item takes equal space */
+      height: auto !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      max-width: none !important;  /* Allow items to take the available space */
+      box-sizing: border-box;  /* Ensure padding and borders are included */
+    }
+  }
+  
+  
 }
 
 /* Modal overlay background */
@@ -162,18 +194,31 @@
 .modal-content {
   position: relative;
   width: 25%;  /* Make the modal 1/4th of the screen width */
-  max-width: 25vw;  /* Ensure it doesn't exceed 1/4th of the viewport width */
+  max-width: 50vw;  /* Ensure it doesn't exceed 1/4th of the viewport width */
   height: auto;
-  max-height: 25vh;  /* Ensure it doesn't exceed 1/4th of the viewport height */
+  max-height: 50vh;  /* Ensure it doesn't exceed 1/4th of the viewport height */
   margin-top: -300px; /* Move the image further up on the screen */
+}
+.close-button {
+  position: absolute;
+  top: -2rem;        /* Position it at the top */   
+  background: transparent; /* Make it transparent */
+  border: none;       /* Remove default border */
+  font-size: 1rem;    /* Adjust size as needed */
+  color: white;       /* Change color for visibility */
+  cursor: pointer;    /* Change cursor to pointer */
+}
+
+.close-button:hover {
+  color: red; /* Change color on hover for effect */
 }
 
 .large-photo {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 4px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* More visible shadow */
-  border: 2px solid #800080;  /* Adds a 2px solid purple border */
+  border: 5px solid #800080;  /* Adds a 2px solid purple border */
 }
 
 .photo-gallery {
@@ -184,7 +229,7 @@
 }
 
 .small-photo {
-  width: 100px;  /* Fixed width */
+  width: 5000px;  /* Fixed width */
   height: 100px;  /* Fixed height to ensure all images are square and uniform */
   object-fit: cover;  /* Cover the container while maintaining the aspect ratio */
   cursor: pointer;  /* Change cursor to pointer on hover */
@@ -203,6 +248,7 @@
   left: 1rem;          /* Adjust this value to move the icons left/right */
   display: flex;       /* Use flexbox for layout */
   gap: 0.8rem;           /* Space between the icons */
+  
 }
 
 /* Styling for the individual icons */
@@ -229,24 +275,79 @@
   color: #ff5aff8b; /* White for email */
 }
 
-/* Optional: Media queries to adjust layout on smaller screens */
 @media (max-width: 700px) {
   .social-icons-bottom-left {
-    bottom: 2rem;  /* Move the icons up slightly on smaller screens */
-    left: 50%;  
-    transform: translateX(19%);  /* Adjust spacing from the left side */
-    gap: 0.8rem;   /* Reduce the gap between icons */
-  }
-
-  .social-icons-bottom-left a {
-    font-size: 1.2rem; /* Slightly smaller icons on smaller screens */
-  }
+    position: absolute;  /* Positioned absolutely inside the parent container */
+    bottom: 1rem;        /* Adjust this value to move the icons up/down */
+    left: 1rem;          /* Adjust this value to move the icons left/right */
+    display: flex;       /* Use flexbox for layout */
+    gap: 0.8rem;           /* Space between the icons */
+    transform: translateX(20%);
+  }  
 }
+
 @media (max-width: 700px) {
-  .menu {
-    width: 15rem;               /* Decrease the width of the menu */
-    top: 50%;                   /* Adjust the vertical position */
-    left: 5vw;                  /* Move the menu closer to the left edge */
-    transform: translateY(-50%); /* Adjust the vertical centering */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);  /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;  /* Ensure it’s above all other content */
   }
+  
+  /* Modal content (image) styling */
+  .modal-content {
+    position: relative;
+    width: 100%;  /* Make the modal 1/4th of the screen width */
+    max-width: 75vw;  /* Ensure it doesn't exceed 1/4th of the viewport width */
+    height: auto;
+    max-height: 50vh;  /* Ensure it doesn't exceed 1/4th of the viewport height */
+    margin-top: -70px; /* Move the image further up on the screen */
+  }
+  .close-button {
+    position: absolute;
+    top: -2rem;        /* Position it at the top */   
+    background: rgba(184, 29, 29, 0); /* Make it transparent */
+    border: none;       /* Remove default border */
+    font-size: 1rem;    /* Adjust size as needed */
+    color: purple;       /* Change color for visibility */
+    cursor: pointer;    /* Change cursor to pointer */
+  }
+  
+  .close-button:hover {
+    color: red; /* Change color on hover for effect */
+  }
+  
+  .large-photo {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* More visible shadow */
+    border: 5px solid #800080;  /* Adds a 2px solid purple border */
+  }
+  
+  .photo-gallery {
+    display: flex;  /* Enables Flexbox for this container */
+    gap: 10px;  /* Adds space between the images */
+    justify-content: center;  /* Center the images horizontally */
+    flex-wrap: wrap;  /* Allows the images to wrap to the next line if the screen is too narrow */
+  }
+  
+  .small-photo {
+    width: 80px;  /* Fixed width */
+    height: 160px;  /* Fixed height to ensure all images are square and uniform */
+    object-fit: cover;  /* Cover the container while maintaining the aspect ratio */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease-in-out;  /* Smooth transition for hover effect */
+    border: 2px solid white;  /* White border around the image */
+    margin: 8px;  /* Add gap between images (this can be adjusted or removed if gap is managed by Flexbox) */
+    border-radius: 4px;  /* Optional: Slightly round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: Add a subtle shadow */
+  }
+  
 }

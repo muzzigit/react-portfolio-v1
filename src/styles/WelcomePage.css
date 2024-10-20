@@ -1,78 +1,76 @@
-/* Reset margin and padding to avoid unexpected scrollbars */
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Prevent scrollbars from appearing */
-}
-
-/* Welcome Page Container */
-.welcome-container {
+.terminal {
+  background-color: #202020;
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 50px auto;
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* Ensure no content escapes the container */
 }
 
-/* Background Video Styling */
-.welcome-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire background */
-  z-index: 0; /* Keep the video in the background */
+.blink-cursor {
+  animation: blink 1s infinite;
 }
 
-/* Window Styling for Text Content */
-.window {
-  width: 60vw;
-  background-color: rgba(30, 30, 30, 0.85); /* Slight transparency */
-  border-radius: 8px;
-  padding: 15px;
-  position: absolute;
-  top: 50%; /* Centered vertically */
-  left: 50%; /* Centered horizontally */
-  transform: translate(-50%, -50%); /* Adjust to align center */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
-  font-family: 'Courier New', monospace;
-  color: #fffbfb;
-  z-index: 1; /* Ensure content stays above the video */
+.empty {
+  height: 3rem; 
 }
 
-/* Dots at the top of the window */
-.dots {
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.command {
+  color: #00FF00; /* Green color for commands */
+}
+
+.output {
+  color: #FFFFFF; /* White color for output */
+}
+
+.terminal-header {
   display: flex;
-  gap: 8px;
-  margin-bottom: 10px;
+  align-items: center;
+  padding: 4px 16px;   /* Increased horizontal padding for better spacing */
+  background: #333;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 10px;  /* Added a small margin to separate header from content */
 }
 
-/* Individual Dot Styling */
-.dot {
+.terminal-button {
+  display: inline-block;
   width: 12px;
   height: 12px;
-  border-radius: 50%; /* Make the dots circular */
+  border-radius: 50%;
+  margin-right: 8px;   /* Increased margin for better spacing */
 }
 
-/* Colors for the Dots */
-.red {
-  background-color: #ff605c;
+.terminal-button.red {
+  background: #E74C3C;  /* Adjusted colors to match the visual */
 }
 
-.yellow {
-  background-color: #ffbd44;
+.terminal-button.yellow {
+  background: #F1C40F;
 }
 
-.green {
-  background-color: #00ca4e;
+.terminal-button.green {
+  background: #2ECC71;
 }
 
-/* Text Container Styling */
-.text-container {
-  font-size: 1rem;
-  line-height: 1.5;
-  white-space: pre-wrap; /* Preserve whitespace */
-  overflow: hidden;
+.info {
+  color: #FFFF00;  /* Yellow color for info lines like portfolio@0.1.0 */
+}
+@media (max-width: 700px) {
+  .terminal {
+    margin: 30vh auto; /* Center vertically and horizontally */
+    transform: translateY(-1%); /* Adjust vertical centering */
+    max-width: auto; /* Optional: Adjust width to fit smaller screens */
+  }
 }
