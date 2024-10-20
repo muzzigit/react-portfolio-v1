@@ -14,7 +14,7 @@ const projects = {
       </>
     ),
     github: "https://github.com/muzzigit/react-portfolio-v1",
-    demo: "https://netlify.com",
+    demo: "https://muzzikhanportfolio.netlify.app/",
   },
   3: {
     title: "MyTree App",
@@ -27,7 +27,7 @@ const projects = {
       </>
     ),
     github: "https://github.com/muzzigit/MyTree",
-    demo: "https://netlify.com",
+    demo: "https://muzzi-linktree.netlify.app/",
   },
   2: {
     title: "Bitcoin Price Bot",
