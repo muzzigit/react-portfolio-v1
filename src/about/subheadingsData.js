@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotographyGallery from './PhotographyGallery';  // Import the PhotographyGallery component
+import PhotographyGallery from './PhotographyGallery';  
 
 const subheadingsData = {
   1: [
@@ -59,6 +59,27 @@ content: (
     },
   ],
   3: [
+    {
+      title: "Refonte Learning - AI/Data Engineer",
+      content: (
+        <>
+          <p>
+          <span style={{ color: "darkgrey" }}>
+        October 2024 - Present <br/>
+        Remote <br/>
+      </span> {/* Close the <span> tag here */}
+      •Enhanced Gen AI models with precision Prompt Engineering, driving adaptability and accuracy across
+      diverse data applications.<br/>
+      •Engineered robust data pipelines and seamless ETL processes, enabling smooth, efficient data flow for
+      real-time and batch processing across global projects.<br/>
+      •Designed high-efficiency data warehouses and optimized databases, creating scalable structures that
+      streamline data access and support massive data loads.<br/>
+      •Harnessed big data tools such as Hadoop and Spark, transforming vast datasets into actionable insights
+      through powerful, scalable processing.<br/>
+          </p>
+        </>
+      ),
+    },
     {
       title: "SwiftlyWeb - Web Developer",
       content: (
